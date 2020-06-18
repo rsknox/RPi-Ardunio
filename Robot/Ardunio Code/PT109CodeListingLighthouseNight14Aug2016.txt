@@ -1,0 +1,303 @@
+#include <Servo.h>
+/*
++-+-+-+-+-+-+-+-+-+-+-+-+
+    Summary of Pin Assignments
+      Pin  0:  unassigned
+      Pin  1:  unassigned
+      Pin  2:  unassigned
+      Pin  3:  unassigned
+      Pin  4:  unassigned
+      Pin  5:  signal from aux1 channel (searchlight)
+      Pin  6:  unassigned
+      Pin  7:  signal from gear channel (gun)
+      Pin  8:  gun speaker
+      Pin  9:  searchlight servo
+      Pin 10:  gun servo
+      Pin 11:
+      Pin 12:  gun muzzle LED
+      Pin 13:  searchlight LED
+      Pin A0:  unassigned
+      Pin A1:  unassigned
+      Pin A3:  unassigned
+      Pin A4:  unassigned
+      Pin A5:  unassigned
+      Pin A6:  unassigned
+
++-+-+-+-+-+-+-+-+-+-+-+-+
+*/
+Servo myservo;  // create servo object to control a servo
+Servo slServo;  // searchlight servo object
+Servo gunServo;  // gun servo object
+int pos = 0;
+
+// variables for searchlight routine
+int aux1pulseWidth = 1300;
+int elevpusleWidth = 1900;
+boolean sloffFlag = true;
+int searchlightPin = 13;
+int signal = 5;  // signal from aux1 channel
+int slServoPin = 9;
+int angle = 0;
+int quad = 1;
+unsigned long slMark = 0;
+unsigned long slInterval = 120; // this is the search light slew rate
+
+// variables for gun fire routine
+int gearpulseWidth = 1300;
+boolean fireFlag = true;
+boolean burstFlag = true;
+int muzzleLedPin = 12;
+int gunSignal = 7;  //signal from Gear switch/channel
+int gunServoPin = 10;
+int gunSpeaker = 8;
+int gunPitch = 75;
+int gunAngle = 0;
+int gunQuad = 1;
+unsigned long gunMark = 0;
+unsigned long gunInterval = 120;
+unsigned long fireRateTimeMark = 0;
+unsigned long fireRateTimeInterval = 40;
+unsigned long burstTimeMark = 0;
+unsigned long burstInterval = 000;
+int minInterval = 700;
+int maxInterval = 2700;
+
+//=====================================================================
+//                        ISTIME
+//=====================================================================
+int IsTime(unsigned long *timeMark, unsigned long timeInterval){
+  unsigned long timeCurrent;
+  unsigned long timeElapsed;
+  int result = false;
+  
+  timeCurrent = millis();
+  timeElapsed= timeCurrent - *timeMark;
+  
+  if (timeElapsed >= timeInterval){
+    *timeMark = timeCurrent;
+    result = true;
+  }
+  return(result);
+}
+//=====================================================================
+//                        SEARCHLIGHT
+//=====================================================================
+
+void searchLight(){
+  digitalWrite(searchlightPin, HIGH);
+  //Serial.println("Searchlight on");
+  if(IsTime(&slMark, slInterval)){  //if time to slew, ascertain which quad we are in
+  //Serial.print("++++++++++++Time ");
+  //Serial.println(quad);
+  //delay(200);
+  switch(quad){
+    case 1:  // between 0 and +90 degrees
+    angle = angle + 1;
+    //Serial.print("quad 1");
+    //Serial.print("  angle  ");
+    //Serial.println(angle);
+    //delay(200);
+    if(angle < 179){
+      slServo.write(angle);
+      
+    }
+    else{
+      quad = 2;
+    }
+    break;
+    
+    case 2:  // between +90 and -90 degrees
+    angle = angle - 1;
+    //Serial.print("quad 2  ");
+    //Serial.print("  angle  ");
+    //Serial.println(angle);
+    //delay(200);
+    if(angle > 0){
+      slServo.write(angle);
+ 
+    }
+    else{
+      quad = 3;
+    }
+    break;
+    
+    case 3:  // between -90 and 0 degrees
+    angle = angle + 1;
+    //Serial.print("quad 3  ");
+    //Serial.print("  angle  ");
+    //Serial.println(angle);
+    //delay(200);
+    if(angle < 0){
+      slServo.write(angle);
+      //Serial.println("quad 3");
+    }
+      else{
+        quad = 1;
+      }
+    }
+  }// if not time to slew, just drop through
+  }  
+
+
+//=====================================================================
+//                        GUNFIRE
+//=====================================================================
+
+void gunFire(){
+ 
+  //Serial.println("Gunfire function");
+  if(IsTime(&gunMark, gunInterval)){  //if time to slew, ascertain which quad we are in
+  //Serial.print("++++++++++++Time ");
+  //Serial.println(gunQuad);
+  //delay(200);
+    switch(gunQuad){
+    case 1:  // between 0 and +90 degrees
+    gunAngle = gunAngle + 1;
+//    Serial.print("quad 1");
+//    Serial.print("  angle  ");
+//    Serial.println(gunAngle);
+//    delay(200);
+    if(gunAngle < 179){
+      gunServo.write(gunAngle);
+      
+    }
+    else{
+      gunQuad = 2;
+    }
+    break;
+    
+    case 2:  // between +90 and -90 degrees
+    gunAngle = gunAngle - 1;
+//    Serial.print("quad 2  ");
+//    Serial.print("  angle  ");
+//    Serial.println(gunAngle);
+//    delay(200);
+    if(gunAngle > 0){
+      gunServo.write(gunAngle);
+ 
+    }
+    else{
+      gunQuad = 3;
+    }
+    break;
+    
+    case 3:  // between -90 and 0 degrees
+    gunAngle = gunAngle + 1;
+    //Serial.print("quad 3  ");
+    //Serial.print("  angle  ");
+    //Serial.println(angle);
+    //delay(200);
+    if(gunAngle < 0){
+      gunServo.write(gunAngle);
+      //Serial.println("quad 3");
+    }
+      else{
+        gunQuad = 1;
+      }
+    }
+  }// if not time to slew, just drop through
+  //Serial.println("end of slew rtn");
+  
+  if (IsTime(&fireRateTimeMark, fireRateTimeInterval)){ //has the fire rate timer expired,
+                // if yes, then determine if we are in burst or silence mode
+    if(burstFlag){
+      //Serial.println("burst flag on");
+      //delay(300);
+      if(fireFlag){
+        //Serial.println("fire flag on");
+        //delay(600);
+        digitalWrite(muzzleLedPin, HIGH);
+        tone(gunSpeaker, gunPitch);
+        fireFlag = !fireFlag;
+      }
+      else{
+       digitalWrite (muzzleLedPin, LOW);
+       noTone(gunSpeaker);
+       fireFlag = !fireFlag;
+      }
+  }
+  else{
+      digitalWrite (muzzleLedPin, LOW);
+      noTone(gunSpeaker);
+      fireFlag = !fireFlag;
+   }
+  }
+  else{
+    digitalWrite (muzzleLedPin, LOW);
+  }
+  
+  if(IsTime(&burstTimeMark, burstInterval)){
+    
+    burstInterval =random(minInterval, maxInterval);
+    burstFlag = !burstFlag;
+  }
+  return;
+}
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(signal, INPUT);
+  pinMode(gunSignal, INPUT);
+  pinMode(searchlightPin, OUTPUT);
+  pinMode(muzzleLedPin, OUTPUT);
+  pinMode(gunSpeaker, OUTPUT);
+  slServo.attach(slServoPin);  // attaches the servo on pin 9 to the servo object
+  slServo.write(0);  // drive searchlight to home position
+  gunServo.attach(gunServoPin);  // attaches the servo on pin 10 to the servo object
+  gunServo.write(0);  // drive gun to home position
+}
+
+void loop() {
+  
+//  aux1pulseWidth = pulseIn(signal, HIGH, 25000); // reading the pulse width from aux1
+  int elevpulseWidth = pulseIn(signal, HIGH, 25000); // reading the pulse width from aux1
+//  Serial.print("Channel 1:     ");  
+//  Serial.println(elevpulseWidth);
+  if(elevpulseWidth > 2200){
+    sloffFlag = false;
+//    Serial.println("EV CP GT2200");
+//    delay(400);
+  }
+  if(elevpulseWidth < 1600){
+    sloffFlag = true;
+//    Serial.println("EV CP LT1600");
+//    delay(400);
+  }
+
+
+//  int aux1pulseWidth = 1600;
+
+    if(sloffFlag){
+//  if(aux1pulseWidth > 1625 || aux1pulseWidth < 1200){
+    digitalWrite(searchlightPin, LOW);  //if aux1 switch is off, turn off of LED
+    angle = 0;  // reset parameters of slew routine
+    quad = 1;
+//    Serial.println("EV CP 1  ");
+//    delay(400);
+    //Serial.println("sw off");
+  }
+    else{  // if switch is on, call searchlight routine
+    //Serial.println("sw on");
+        searchLight();
+//        Serial.println("EV CP 2 ");
+//        delay(400);
+      }
+      
+  
+  gearpulseWidth = pulseIn(gunSignal, HIGH, 25000); // reading the pulse width from gear channel
+//  gearpulseWidth = 1600;
+//Serial.println(gearpulseWidth);
+//delay(100);
+  if(gearpulseWidth < 1800){  //if gear switch is off, ensure muzzle LED and speaker are off
+    digitalWrite(muzzleLedPin, LOW);
+    noTone(gunSpeaker);
+    gunAngle = 0;  // reset parameters of gun slew routine
+    gunQuad = 1;
+//    Serial.println("gear sw off");
+  }
+  else{
+    gunFire();
+  }
+  
+}
+  
