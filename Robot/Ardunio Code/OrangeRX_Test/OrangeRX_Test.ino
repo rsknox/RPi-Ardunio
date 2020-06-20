@@ -13,13 +13,16 @@ int pwm_value_8;
 int pwm_value_9;
  
 void setup() {
+  Serial.begin(9600);
+  Serial.println( __FILE__ );
+  Serial.println( __DATE__ );
+  Serial.println( __TIME__ );
   pinMode(pin4, INPUT);
   pinMode(pin5, INPUT);
   pinMode(pin6, INPUT);
   pinMode(pin7, INPUT);
   pinMode(pin8, INPUT);
   pinMode(pin9, INPUT);
-  Serial.begin(9600);
 }
  
 void loop() {
