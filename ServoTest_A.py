@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 import pigpio
 import time
  
-servo = 17
+servo = 13
  
 # more info at http://abyz.me.uk/rpi/pigpio/python.html#set_servo_pulsewidth
  

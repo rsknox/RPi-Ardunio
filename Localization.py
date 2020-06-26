@@ -127,8 +127,9 @@ while l==0:
     print ("calibration image file: ", cal_image)
     logging.info('Calibration image file: {a}'.format (a=cal_image))
     img = cv2.imread(cal_image,cv2.IMREAD_GRAYSCALE)
-
+    print("after cv2; prior to detector")
     detector = apriltag.Detector()
+    print("after detector; prior to result")
 
     result = detector.detect(img)
     if result == []:

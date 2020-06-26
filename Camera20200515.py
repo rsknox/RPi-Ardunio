@@ -29,7 +29,7 @@ camera.resolution = (1280, 1024)
 #camera.start_preview()
 camera.start_preview(fullscreen=False, window=(100,100,512,384))
 
-schedule.every(1.0).seconds.do(i_capture,'clyde')
+schedule.every(1.0).seconds.do(i_capture,'C_vnc_25Jun')
 
 sleep(2)  # give camera time to stablize
 now = int(round(time.time() * 1000))

@@ -100,3 +100,46 @@
 2020-06-20 14:07:57,932 File name: /home/pi/RPi-Ardunio/clyde20200620-140757.jpg
 2020-06-20 14:07:58,938 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-20 14:07:57, next run: 2020-06-20 14:07:58)
 2020-06-20 14:07:59,465 File name: /home/pi/RPi-Ardunio/clyde20200620-140758.jpg
+2020-06-24 06:50:12,333 Start
+2020-06-24 06:50:14,877 Running job Every 1.0 second do i_capture('clyde') (last run: [never], next run: 2020-06-24 06:50:13)
+2020-06-24 06:50:15,436 File name: /home/pi/RPi-Ardunio/clyde20200624-065014.jpg
+2020-06-24 06:50:16,438 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-24 06:50:15, next run: 2020-06-24 06:50:16)
+2020-06-24 06:50:16,966 File name: /home/pi/RPi-Ardunio/clyde20200624-065016.jpg
+2020-06-24 06:50:17,968 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-24 06:50:16, next run: 2020-06-24 06:50:17)
+2020-06-24 06:50:18,497 File name: /home/pi/RPi-Ardunio/clyde20200624-065017.jpg
+2020-06-24 06:50:19,499 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-24 06:50:18, next run: 2020-06-24 06:50:19)
+2020-06-24 06:50:20,026 File name: /home/pi/RPi-Ardunio/clyde20200624-065019.jpg
+2020-06-24 06:50:21,028 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-24 06:50:20, next run: 2020-06-24 06:50:21)
+2020-06-24 06:50:21,560 File name: /home/pi/RPi-Ardunio/clyde20200624-065021.jpg
+2020-06-24 06:50:22,563 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-24 06:50:21, next run: 2020-06-24 06:50:22)
+2020-06-24 06:50:23,090 File name: /home/pi/RPi-Ardunio/clyde20200624-065022.jpg
+2020-06-24 06:50:24,092 Running job Every 1.0 second do i_capture('clyde') (last run: 2020-06-24 06:50:23, next run: 2020-06-24 06:50:24)
+2020-06-24 06:50:24,619 File name: /home/pi/RPi-Ardunio/clyde20200624-065024.jpg
+2020-06-25 11:28:18,909 Start
+2020-06-25 11:28:21,563 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: [never], next run: 2020-06-25 11:28:20)
+2020-06-25 11:28:22,168 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112821.jpg
+2020-06-25 11:28:23,171 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: 2020-06-25 11:28:22, next run: 2020-06-25 11:28:23)
+2020-06-25 11:28:23,729 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112823.jpg
+2020-06-25 11:28:24,735 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: 2020-06-25 11:28:23, next run: 2020-06-25 11:28:24)
+2020-06-25 11:28:25,297 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112824.jpg
+2020-06-25 11:28:26,299 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: 2020-06-25 11:28:25, next run: 2020-06-25 11:28:26)
+2020-06-25 11:28:26,873 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112826.jpg
+2020-06-25 11:28:27,884 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: 2020-06-25 11:28:26, next run: 2020-06-25 11:28:27)
+2020-06-25 11:28:28,442 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112827.jpg
+2020-06-25 11:28:29,445 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: 2020-06-25 11:28:28, next run: 2020-06-25 11:28:29)
+2020-06-25 11:28:30,017 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112829.jpg
+2020-06-25 11:28:31,035 Running job Every 1.0 second do i_capture('RSK25Jun') (last run: 2020-06-25 11:28:30, next run: 2020-06-25 11:28:31)
+2020-06-25 11:28:31,586 File name: /home/pi/RPi-Ardunio/RSK25Jun20200625-112831.jpg
+2020-06-25 11:32:28,754 Start
+2020-06-25 11:32:31,346 Running job Every 1.0 second do i_capture('C_vnc_25Jun') (last run: [never], next run: 2020-06-25 11:32:30)
+2020-06-25 11:32:32,075 File name: /home/pi/RPi-Ardunio/C_vnc_25Jun20200625-113231.jpg
+2020-06-25 11:32:33,082 Running job Every 1.0 second do i_capture('C_vnc_25Jun') (last run: 2020-06-25 11:32:32, next run: 2020-06-25 11:32:33)
+2020-06-25 11:32:33,828 File name: /home/pi/RPi-Ardunio/C_vnc_25Jun20200625-113233.jpg
+2020-06-25 11:32:34,853 Running job Every 1.0 second do i_capture('C_vnc_25Jun') (last run: 2020-06-25 11:32:33, next run: 2020-06-25 11:32:34)
+2020-06-25 11:32:35,577 File name: /home/pi/RPi-Ardunio/C_vnc_25Jun20200625-113234.jpg
+2020-06-25 11:32:36,635 Running job Every 1.0 second do i_capture('C_vnc_25Jun') (last run: 2020-06-25 11:32:35, next run: 2020-06-25 11:32:36)
+2020-06-25 11:32:37,374 File name: /home/pi/RPi-Ardunio/C_vnc_25Jun20200625-113236.jpg
+2020-06-25 11:32:38,381 Running job Every 1.0 second do i_capture('C_vnc_25Jun') (last run: 2020-06-25 11:32:37, next run: 2020-06-25 11:32:38)
+2020-06-25 11:32:39,034 File name: /home/pi/RPi-Ardunio/C_vnc_25Jun20200625-113238.jpg
+2020-06-25 11:32:40,053 Running job Every 1.0 second do i_capture('C_vnc_25Jun') (last run: 2020-06-25 11:32:39, next run: 2020-06-25 11:32:40)
+2020-06-25 11:32:40,708 File name: /home/pi/RPi-Ardunio/C_vnc_25Jun20200625-113240.jpg
