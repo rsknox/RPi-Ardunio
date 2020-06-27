@@ -1,0 +1,24 @@
+2020-06-27 16:21:17,038 File name: /home/pi/RPi-Ardunio/calibration20200627-162116.jpg
+2020-06-27 16:21:17,044 Calibration image file: /home/pi/RPi-Ardunio/calibration20200627-162116.jpg
+2020-06-27 16:21:17,903 Detected tags added to list: []
+2020-06-27 16:21:40,121 ctrl-c detected
+2020-06-27 16:30:34,635 track image file: /home/pi/RPi-Ardunio/calibration20200627-162116.jpg
+2020-06-27 16:30:35,448 Robot target object height and range: 66, 1039.628400796284
+2020-06-27 16:32:06,673 track image file: /home/pi/RPi-Ardunio/calibration20200627-162116.jpg
+2020-06-27 16:32:07,420 Robot target object height and range: 66, 1039.628400796284
+2020-06-27 16:36:15,302 Running job Every 1.0 second do i_capture('track_i') (last run: [never], next run: 2020-06-27 16:36:13)
+2020-06-27 16:36:15,854 File name: /home/pi/RPi-Ardunio/track_i20200627-163615.jpg
+2020-06-27 16:36:15,860 track image file: /home/pi/RPi-Ardunio/track_i20200627-163615.jpg
+2020-06-27 16:36:16,664 Robot target object height and range: 66, 1039.628400796284
+2020-06-27 16:37:17,869 Running job Every 1.0 second do i_capture('track_i') (last run: [never], next run: 2020-06-27 16:37:16)
+2020-06-27 16:37:18,425 File name: /home/pi/RPi-Ardunio/track_i20200627-163717.jpg
+2020-06-27 16:37:18,431 track image file: /home/pi/RPi-Ardunio/track_i20200627-163717.jpg
+2020-06-27 16:37:19,226 Robot target object height and range: 66, 1039.628400796284
+2020-06-27 16:37:44,645 Running job Every 1.0 second do i_capture('track_i') (last run: [never], next run: 2020-06-27 16:37:43)
+2020-06-27 16:37:45,198 File name: /home/pi/RPi-Ardunio/track_i20200627-163744.jpg
+2020-06-27 16:37:45,204 track image file: /home/pi/RPi-Ardunio/track_i20200627-163744.jpg
+2020-06-27 16:37:45,962 Robot target object height and range: 66, 1039.628400796284
+2020-06-27 16:38:14,774 Running job Every 1.0 second do i_capture('track_i') (last run: [never], next run: 2020-06-27 16:38:13)
+2020-06-27 16:38:15,320 File name: /home/pi/RPi-Ardunio/track_i20200627-163814.jpg
+2020-06-27 16:38:15,326 track image file: /home/pi/RPi-Ardunio/track_i20200627-163814.jpg
+2020-06-27 16:38:16,056 Robot target object height and range: 66, 1039.628400796284
