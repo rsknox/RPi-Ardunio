@@ -3922,3 +3922,22 @@
 2020-06-28 13:51:25,369 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Fid_tracking-20200628-13:51:24.831510.jpg
 2020-06-28 13:51:26,140 Robot target object height and range: 64, 2259.85401459854
 2020-06-28 13:51:26,648 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Fid_tracking-20200628-13:51:26.142294.jpg
+2020-07-01 17:03:04,005 Calibration start
+2020-07-01 17:03:04,010 Targets read and returned: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-01 17:03:04,010 Targets from csv file: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-01 17:04:11,774 Calibration start
+2020-07-01 17:04:11,776 Targets read and returned: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-01 17:04:11,777 Targets from csv file: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-01 17:04:13,829 90 degrees
+2020-07-01 17:04:14,349 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/calibration20200701-17:04:13.831336.jpg
+2020-07-01 17:04:14,353 Calibration image file: /home/pi/RPi-Ardunio/Robot/RPiCode/calibration20200701-17:04:13.831336.jpg
+2020-07-01 17:04:15,103 Empty array
+2020-07-01 17:04:47,551 Calibration start
+2020-07-01 17:04:47,552 Targets read and returned: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-01 17:04:47,553 Targets from csv file: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-01 17:04:49,605 90 degrees
+2020-07-01 17:04:50,126 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/calibration20200701-17:04:49.607073.jpg
+2020-07-01 17:04:50,130 Calibration image file: /home/pi/RPi-Ardunio/Robot/RPiCode/calibration20200701-17:04:49.607073.jpg
+2020-07-01 17:04:50,835 Fiducial target object height and range: 76, 1903.0349596619285
+2020-07-01 17:04:50,836 Detected tags added to list: [['0', '2000', '3353', '3353', '0', '0', '86', 382, 837, 1903, '0']]
+2020-07-01 17:04:50,855 Fiducial targets list: [['0', '2000', '3353', '3353', '0', '0', '86', 382, 837, 1903, 0.0]]
