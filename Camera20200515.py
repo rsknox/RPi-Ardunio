@@ -15,7 +15,7 @@ def signal_handler(sig, frame):
     sys.exit(0)
 
 def i_capture(name):
-    file_name = "/home/pi/RPi-Ardunio/" + name + datetime.datetime.now().strftime("%Y%m%d-%H%M%S.jpg")
+    file_name = "/home/pi/RPi-Ardunio/" + name + datetime.datetime.now().strftime("%Y%m%d-%H:%M:%S.%f.jpg")
 #    file_name = "/home/pi/RPi-Ardunio/apriltags" + file_name
 #camera.capture('/home/pi/RPi-Ardunio/apriltags%s.jpg' %j)
     camera.capture(file_name)
@@ -29,14 +29,21 @@ camera.resolution = (1280, 1024)
 #camera.start_preview()
 camera.start_preview(fullscreen=False, window=(100,100,512,384))
 
+
 schedule.every(1.0).seconds.do(i_capture,'C_vnc_25Jun')
 
+#schedule.every(1.0).seconds.do(i_capture,'clyde')
+
+
 sleep(2)  # give camera time to stablize
-now = int(round(time.time() * 1000))
-ter = now + 10000
-while now < ter:
-    schedule.run_pending()
-    now = int(round(time.time() * 1000))
+
+while True:
+    i_capture('Img ')
+# now = int(round(time.time() * 1000))
+# ter = now + 10000
+# while now < ter:
+#     schedule.run_pending()
+#     now = int(round(time.time() * 1000))
 #    print('\n', 'now: ', now)
     #logging.info('now: {a}'.format (a=now))
     
