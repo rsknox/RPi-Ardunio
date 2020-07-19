@@ -3,16 +3,16 @@
     #list of three tuples: (tag number, x-coord, y-coord)
     #list of three tuples: (tag number, range)
 #output: x and y in arena coordinates
-def Local(coord, range):
+def Local(coord, rng):
     x1=coord[0][1]
     y1=coord[0][2]
-    r1=range[0][1]
+    r1=rng[0][1]
     x2=coord[1][1]
     y2=coord[1][2]
-    r2=range[1][1]
+    r2=rng[1][1]
     x3=coord[2][1]
     y3=coord[2][2]
-    r3=range[2][1]
+    r3=rng[2][1]
     
     A = 2*x2 - 2*x1
     B = 2*y2 - 2*y1
