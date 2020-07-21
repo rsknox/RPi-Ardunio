@@ -24,20 +24,29 @@ import pigpio
 
 servo = 13
 
-img_h = 1280  # image width in pixels
-img_v = 1024  # image height in pixels
+#img_h = 1280  # image width in pixels
+#img_v = 1024  # image height in pixels
+img_h = 640  # image width in pixels
+img_v = 512  # image height in pixels
 img_cx = 0.5 * img_h  # center pixel in x direction
 img_cy = 0.5 * img_v  # center pixel in y direction
 
 def signal_handler(sig, frame):
     print('ctrl-c detected')
     logging.info('ctrl-c detected')
+    camera.stop_preview()
     sys.exit(0)
 
-def i_capture(name):
-    file_name = "/home/pi/RPi-Ardunio/Robot/RPiCode/" + name + datetime.datetime.now().strftime("%Y%m%d-%H:%M:%S.%f.jpg")
+def i_capture_one(name):
+    file_name = "/home/pi/RPi-Ardunio/Robot/RPiCode/Images/" + name + datetime.datetime.now().strftime("%Y%m%d-%H:%M:%S.%f.jpg")
     camera.capture(file_name)
-    #print('\n', file_name)
+    print('\n', file_name)
+    logging.info('File name: {a}'.format (a=file_name))
+
+def i_capture(name):
+    file_name = "/home/pi/RPi-Ardunio/Robot/RPiCode/Images/" + name + datetime.datetime.now().strftime("%Y%m%d-%H:%M:%S.%f.jpg")
+    camera.capture(file_name)
+    print('\n', 'In i_capture---> ',file_name)
     logging.info('File name: {a}'.format (a=file_name))
 
 def extract_center(result, i):
@@ -97,7 +106,7 @@ signal.signal(signal.SIGINT, signal_handler)
 camera = PiCamera()
 camera.resolution = (img_h, img_v)
 # CSV file parameters
-gndTfilename = "/home/pi/RPi-Ardunio/Robot/Input Files/gndTrth.csv"
+gndTfilename = "/home/pi/RPi-Ardunio/Robot/InputFiles/gndTrth.csv"
 titles = []
 targets = []
 
@@ -140,8 +149,8 @@ l=0 # will loop and capture calibration images until tag 0 is in center
     # to continue with the program
 while l==0:
     
-    i_capture('calibration')
-    list_files = glob.glob('/home/pi/RPi-Ardunio/Robot/RPiCode/*.jpg')
+    i_capture_one('ca2020l0720')
+    list_files = glob.glob('/home/pi/RPi-Ardunio/Robot/RPiCode/Images/*.jpg')
     cal_image = max(list_files, key=os.path.getctime)
     print ("calibration image file: ", cal_image)
     logging.info('Calibration image file: {a}'.format (a=cal_image))
@@ -199,7 +208,7 @@ while l==0:
             tag0_x = targets[i][7]
             print('\n', 'found fiducial tag 0; tag0_r: ', tag0_r)
     #calculate px/mm at the base target range 26.75 deg = .4669 rad
-    pxmm = (2 * tag0_r * math.sin(.4669))/1280
+    pxmm = (2 * tag0_r * math.sin(.4669))/img_h
     print('\n', 'pxmm: ', pxmm)
     
     #scroll through fiducial targets and calculate degree offset
@@ -245,11 +254,11 @@ while True:
         Detect Robot(s) Targets
         = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
         """
-        i_capture('Fid_tracking-')
-        list_files = glob.glob('/home/pi/RPi-Ardunio/Robot/RPiCode/*.jpg')
+        i_capture("FIDtracking")
+        list_files = glob.glob("/home/pi/RPi-Ardunio/Robot/RPiCode/Images/*.jpg")
         track_image = max(list_files, key=os.path.getctime)
-    #     print ("track image file: ", track_image)
-    #     logging.info('track image file: {a}'.format (a=track_image))
+        print ("track image file: ", track_image)
+        logging.info('track image file: {a}'.format (a=track_image))
         img = cv2.imread(track_image,cv2.IMREAD_GRAYSCALE)
 
         detector = apriltag.Detector()

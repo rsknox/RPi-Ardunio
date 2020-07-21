@@ -12,6 +12,7 @@ logging.basicConfig(filename='logCamera.log', level=logging.INFO, format='%(asct
 def signal_handler(sig, frame):
     print('ctrl-c detected')
     logging.info('ctrl-c detected')
+    camera.stop_preview()
     sys.exit(0)
 
 def i_capture(name):
@@ -19,26 +20,38 @@ def i_capture(name):
 #    file_name = "/home/pi/RPi-Ardunio/apriltags" + file_name
 #camera.capture('/home/pi/RPi-Ardunio/apriltags%s.jpg' %j)
     camera.capture(file_name)
+    #camera.capture_continuous(file_name)
+    #camera.capture_sequence(file_name)
     print('\n', file_name)
     logging.info('File name: {a}'.format (a=file_name))
 
-signal.signal(signal.SIGINT, signal_handler)
+#signal.signal(signal.SIGINT, signal_handler)
 logging.info('Start')
 camera = PiCamera()
-camera.resolution = (1280, 1024)
+camera.resolution = (640, 512)
+#camera.framerate = 10
 #camera.start_preview()
-camera.start_preview(fullscreen=False, window=(100,100,512,384))
+#iso=camera.ISO()
+#g=camera.shutter_speed()
+print('bright', camera.brightness)
+print('exp speed: ', camera.exposure_speed)
+camera.start_preview(fullscreen=False, window=(800,250,512,384))
 
 
-schedule.every(1.0).seconds.do(i_capture,'C_vnc_25Jun')
+#schedule.every(0.1).seconds.do(i_capture,'C_19Jul')
 
 #schedule.every(1.0).seconds.do(i_capture,'clyde')
 
 
 sleep(2)  # give camera time to stablize
 
-while True:
-    i_capture('Img ')
+#while True:
+try:
+    for i in range(100):
+        
+        i_capture('Jul20_seq_')
+        time.sleep(0.1)
+finally:    
 # now = int(round(time.time() * 1000))
 # ter = now + 10000
 # while now < ter:
@@ -78,5 +91,5 @@ while True:
 # camera.start_recording('video_a.h264')
 # sleep(6)
 # camera.stop_recording()
-camera.stop_preview()
-sys.exit()
+    camera.stop_preview()
+    sys.exit()
