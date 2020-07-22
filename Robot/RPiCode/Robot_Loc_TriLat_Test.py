@@ -5,11 +5,11 @@
 # 28 Jun 2020; 0709: added turret slew logic
 # 27 Jun 2020; 1559: inital starting point using code from 'Localization.py' 
 
-from picamera import PiCamera
+#from picamera import PiCamera
 from time import sleep
 import datetime
-import apriltag
-import cv2
+#import apriltag
+#import cv2
 import math
 import time
 import glob
@@ -17,10 +17,10 @@ import os
 import sys
 import signal
 import logging
-import schedule
+#import schedule
 import csv
-import RPi.GPIO as GPIO
-import pigpio
+#import RPi.GPIO as GPIO
+#import pigpio
 
 servo = 13
 
@@ -128,16 +128,16 @@ def readGndT(gndTfilename):
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 """
 
-logging.basicConfig(filename="/home/pi/RPi-Ardunio/Robot/RPiCode/log_Robot_Loc_Trilat.log", level=logging.INFO, format='%(asctime)s %(message)s')
+#logging.basicConfig(filename="/home/pi/RPi-Ardunio/Robot/RPiCode/log_Robot_Loc_Trilat_Test.log", level=logging.INFO, format='%(asctime)s %(message)s')
 signal.signal(signal.SIGINT, signal_handler)
 #schedule.every(0.5).seconds.do(i_capture,'track_i')
 
 # insert parameters and constants
 
-camera = PiCamera()
-camera.resolution = (img_h, img_v)
+#camera = PiCamera()
+#camera.resolution = (img_h, img_v)
 # CSV file parameters
-gndTfilename = "/home/pi/RPi-Ardunio/Robot/InputFiles/parameters.csv"
+gndTfilename = "C:/Users/rsknox/git/RPi-Ardunio/Robot/InputFiles/parameters.csv"
 param = []
 parameters = []
 
