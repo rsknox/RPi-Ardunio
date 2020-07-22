@@ -1,8 +1,8 @@
-#r - robot: x,y (mm) of initial starting position
-r,2000,0
-# t - tag parameters: tag nr (integer), x, y (mm), tag size (mm)
+#,r - robot: x,y (mm) of initial starting position
+r,2000,1
+#,t - tag parameters: tag nr (integer), x, y (mm), tag size (mm)
 t,0,-500,-500,86
-t,1,-0,0,86
+t,1,-10,1,86
 t,2,-750,500,86
 t,3,-250,3500,86
 t,4,0,4000,86
@@ -11,5 +11,5 @@ t,6,3500,4250,86
 t,7,4000,4000,86
 t,8,4250,3750,86
 t,9,4400,250,86
-t,10,4000,0,86
+t,10,4000,2,86
 t,11,3800,-250,86

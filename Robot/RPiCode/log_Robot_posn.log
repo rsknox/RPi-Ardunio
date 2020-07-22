@@ -769,3 +769,246 @@
 2020-07-20 15:58:39,066 Step size, tag center, pwm and az: -57.08866658888211, 192.68674716420256, 1146.2722762629496, 58.22272759125672
 2020-07-20 15:58:39,069 Robot target object height and range: 26, 2781.358787198203
 2020-07-20 15:58:39,077 Step size, tag center, pwm and az: 37.33285164531845, 403.3197116716461, 1183.605127908268, 61.58604755930343
+2020-07-21 09:34:58,214 Calibration start
+2020-07-21 09:34:58,220 Targets read and returned: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-21 09:34:58,221 Targets from csv file: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-21 09:35:43,332 Calibration start
+2020-07-21 09:35:43,334 Targets read and returned: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-21 09:35:43,335 Targets from csv file: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-21 09:35:45,393 90 degrees
+2020-07-21 09:35:45,900 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/ca2020l072020200721-09:35:45.395390.jpg
+2020-07-21 09:35:45,904 Calibration image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/ca2020l072020200721-09:35:45.395390.jpg
+2020-07-21 09:35:46,359 Empty array
+2020-07-21 09:37:11,128 Calibration start
+2020-07-21 09:37:11,130 Targets read and returned: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-21 09:37:11,131 Targets from csv file: [['0', '2000', '3353', '3353', '0', '0', '86', '0', '0', '0', '0']]
+2020-07-21 09:37:13,183 90 degrees
+2020-07-21 09:37:13,697 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/ca2020l072020200721-09:37:13.184833.jpg
+2020-07-21 09:37:13,701 Calibration image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/ca2020l072020200721-09:37:13.184833.jpg
+2020-07-21 09:37:14,138 Fiducial target object height and range: 45, 1607.0072992700727
+2020-07-21 09:37:14,139 Detected tags added to list: [['0', '2000', '3353', '3353', '0', '0', '86', 245, 357, 1607, '0']]
+2020-07-21 09:37:14,149 Detected tags added to list: [['0', '2000', '3353', '3353', '0', '0', '86', 245, 357, 1607, '0']]
+2020-07-21 09:37:14,165 Fiducial targets list: [['0', '2000', '3353', '3353', '0', '0', '86', 245, 357, 1607, 0.0]]
+2020-07-21 09:37:21,864 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:21.353953.jpg
+2020-07-21 09:37:21,867 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:21.353953.jpg
+2020-07-21 09:37:22,287 Robot target object height and range: 45, 1607.0072992700727
+2020-07-21 09:37:22,293 Step size, tag center, pwm and az: -33.37792668457425, 245.4983576750334, 1466.6220733154257, 87.08306966805637
+2020-07-21 09:37:22,294 Robot target object height and range: 26, 2781.358787198203
+2020-07-21 09:37:22,299 Step size, tag center, pwm and az: 74.48693203968811, 485.9568387432028, 1541.1090053551138, 93.79360408604629
+2020-07-21 09:37:22,803 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:22.301061.jpg
+2020-07-21 09:37:22,806 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:22.301061.jpg
+2020-07-21 09:37:23,230 Robot target object height and range: 44, 1643.5301924353018
+2020-07-21 09:37:23,236 Step size, tag center, pwm and az: -16.646906283225334, 282.8302754579601, 1524.4620990718886, 92.29388279926924
+2020-07-21 09:37:23,237 Robot target object height and range: 27, 2678.345498783455
+2020-07-21 09:37:23,242 Step size, tag center, pwm and az: 91.78869218981445, 524.2633614461752, 1616.250791261703, 100.56313434790117
+2020-07-21 09:37:23,742 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:23.243829.jpg
+2020-07-21 09:37:23,745 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:23.243829.jpg
+2020-07-21 09:37:24,163 Empty array
+2020-07-21 09:37:24,682 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:24.163880.jpg
+2020-07-21 09:37:24,685 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:24.163880.jpg
+2020-07-21 09:37:25,118 Robot target object height and range: 44, 1643.5301924353018
+2020-07-21 09:37:25,123 Step size, tag center, pwm and az: 15.757848539857045, 355.1850254311502, 1632.00863980156, 101.98276034248289
+2020-07-21 09:37:25,125 Robot target object height and range: 27, 2678.345498783455
+2020-07-21 09:37:25,134 Step size, tag center, pwm and az: 125.83232657651429, 599.1703591441361, 1757.8409663780744, 113.31900598000671
+2020-07-21 09:37:25,655 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:25.135989.jpg
+2020-07-21 09:37:25,658 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:25.135989.jpg
+2020-07-21 09:37:26,140 Robot target object height and range: 44, 1643.5301924353018
+2020-07-21 09:37:26,145 Step size, tag center, pwm and az: 82.70273637715626, 504.16383062838923, 1840.5437027552307, 120.76970295092168
+2020-07-21 09:37:26,665 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:26.147626.jpg
+2020-07-21 09:37:26,669 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:26.147626.jpg
+2020-07-21 09:37:27,154 Robot target object height and range: 46, 1572.072357981593
+2020-07-21 09:37:27,166 Step size, tag center, pwm and az: 128.99299536868432, 606.0876751277831, 1969.536698123915, 132.39069352467703
+2020-07-21 09:37:27,700 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:27.167504.jpg
+2020-07-21 09:37:27,703 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:27.167504.jpg
+2020-07-21 09:37:28,161 Empty array
+2020-07-21 09:37:28,672 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:28.162753.jpg
+2020-07-21 09:37:28,676 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:28.162753.jpg
+2020-07-21 09:37:29,133 Empty array
+2020-07-21 09:37:29,651 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:29.134543.jpg
+2020-07-21 09:37:29,658 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:29.134543.jpg
+2020-07-21 09:37:30,113 Empty array
+2020-07-21 09:37:30,618 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:30.114753.jpg
+2020-07-21 09:37:30,622 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:30.114753.jpg
+2020-07-21 09:37:31,075 Empty array
+2020-07-21 09:37:31,591 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:31.076038.jpg
+2020-07-21 09:37:31,595 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:31.076038.jpg
+2020-07-21 09:37:32,043 Empty array
+2020-07-21 09:37:32,563 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:32.043825.jpg
+2020-07-21 09:37:32,566 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:32.043825.jpg
+2020-07-21 09:37:33,012 Empty array
+2020-07-21 09:37:33,533 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:33.014051.jpg
+2020-07-21 09:37:33,537 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:33.014051.jpg
+2020-07-21 09:37:34,002 Empty array
+2020-07-21 09:37:34,506 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:34.003089.jpg
+2020-07-21 09:37:34,509 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:34.003089.jpg
+2020-07-21 09:37:34,940 Empty array
+2020-07-21 09:37:35,442 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:34.941134.jpg
+2020-07-21 09:37:35,446 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:34.941134.jpg
+2020-07-21 09:37:35,887 Empty array
+2020-07-21 09:37:36,413 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:35.887833.jpg
+2020-07-21 09:37:36,417 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:35.887833.jpg
+2020-07-21 09:37:36,836 Empty array
+2020-07-21 09:37:37,353 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:36.837484.jpg
+2020-07-21 09:37:37,357 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:36.837484.jpg
+2020-07-21 09:37:37,800 Robot target object height and range: 42, 1721.7935349322208
+2020-07-21 09:37:37,807 Step size, tag center, pwm and az: -51.992791212755506, 204.0245533454663, 1917.5439069111594, 127.70665828028464
+2020-07-21 09:37:38,323 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:37.808704.jpg
+2020-07-21 09:37:38,327 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:37.808704.jpg
+2020-07-21 09:37:38,755 Robot target object height and range: 45, 1607.0072992700727
+2020-07-21 09:37:38,760 Step size, tag center, pwm and az: -86.79593444764761, 126.77650360794122, 1830.7479724635118, 119.8872047264425
+2020-07-21 09:37:38,761 Robot target object height and range: 25, 2892.6131386861316
+2020-07-21 09:37:38,767 Step size, tag center, pwm and az: 28.539789221512095, 383.7104536629269, 1859.287761685024, 122.45835690856072
+2020-07-21 09:37:39,294 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:38.768212.jpg
+2020-07-21 09:37:39,298 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:38.768212.jpg
+2020-07-21 09:37:39,739 Robot target object height and range: 46, 1572.072357981593
+2020-07-21 09:37:39,745 Step size, tag center, pwm and az: -121.57971986778983, 50.14754332938455, 1737.708041817234, 111.5052289925436
+2020-07-21 09:37:39,746 Robot target object height and range: 25, 2892.6131386861316
+2020-07-21 09:37:40,267 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:39.748371.jpg
+2020-07-21 09:37:40,273 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:39.748371.jpg
+2020-07-21 09:37:40,722 Robot target object height and range: 26, 2781.358787198203
+2020-07-21 09:37:40,728 Step size, tag center, pwm and az: -54.56563578172468, 198.29926180098877, 1683.1424060355093, 106.58940594914499
+2020-07-21 09:37:41,240 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:40.729515.jpg
+2020-07-21 09:37:41,247 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:40.729515.jpg
+2020-07-21 09:37:41,665 Robot target object height and range: 27, 2678.345498783455
+2020-07-21 09:37:41,671 Step size, tag center, pwm and az: -78.50725760824096, 145.13010605012389, 1604.6351484272684, 99.51668003849265
+2020-07-21 09:37:42,178 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:41.672869.jpg
+2020-07-21 09:37:42,187 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:41.672869.jpg
+2020-07-21 09:37:42,607 Robot target object height and range: 28, 2582.690302398332
+2020-07-21 09:37:42,614 Step size, tag center, pwm and az: -116.35807162181625, 61.60512325326974, 1488.2770768054522, 89.03397088337408
+2020-07-21 09:37:43,112 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:42.615733.jpg
+2020-07-21 09:37:43,117 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:42.615733.jpg
+2020-07-21 09:37:43,536 Empty array
+2020-07-21 09:37:44,050 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:43.537059.jpg
+2020-07-21 09:37:44,054 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:43.537059.jpg
+2020-07-21 09:37:44,482 Empty array
+2020-07-21 09:37:44,991 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:44.483828.jpg
+2020-07-21 09:37:44,996 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:44.483828.jpg
+2020-07-21 09:37:45,426 Empty array
+2020-07-21 09:37:45,925 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:45.427077.jpg
+2020-07-21 09:37:45,930 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:45.427077.jpg
+2020-07-21 09:37:46,354 Empty array
+2020-07-21 09:37:46,863 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:46.355335.jpg
+2020-07-21 09:37:46,868 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:46.355335.jpg
+2020-07-21 09:37:47,292 Empty array
+2020-07-21 09:37:47,800 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:47.292955.jpg
+2020-07-21 09:37:47,805 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:47.292955.jpg
+2020-07-21 09:37:48,242 Empty array
+2020-07-21 09:37:48,771 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:48.242736.jpg
+2020-07-21 09:37:48,776 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:48.242736.jpg
+2020-07-21 09:37:49,195 Empty array
+2020-07-21 09:37:49,709 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:49.196373.jpg
+2020-07-21 09:37:49,714 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:49.196373.jpg
+2020-07-21 09:37:50,123 Empty array
+2020-07-21 09:37:50,646 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:50.123832.jpg
+2020-07-21 09:37:50,651 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:50.123832.jpg
+2020-07-21 09:37:51,077 Empty array
+2020-07-21 09:37:51,586 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:51.078337.jpg
+2020-07-21 09:37:51,592 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:51.078337.jpg
+2020-07-21 09:37:52,035 Robot target object height and range: 45, 1607.0072992700727
+2020-07-21 09:37:52,042 Step size, tag center, pwm and az: -29.167194143712067, 254.88993494389143, 1459.1098826617401, 86.4062957352919
+2020-07-21 09:37:52,044 Robot target object height and range: 26, 2781.358787198203
+2020-07-21 09:37:52,049 Step size, tag center, pwm and az: 78.83192497327974, 495.5893817411538, 1537.9418076350198, 93.50827095810989
+2020-07-21 09:37:52,555 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:52.050778.jpg
+2020-07-21 09:37:52,560 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:52.050778.jpg
+2020-07-21 09:37:52,993 Robot target object height and range: 42, 1721.7935349322208
+2020-07-21 09:37:52,996 Robot target object height and range: 28, 2582.690302398332
+2020-07-21 09:37:53,003 Step size, tag center, pwm and az: 107.95061032109649, 559.9106850384478, 1645.8924179561163, 103.2335511672177
+2020-07-21 09:37:53,526 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:53.005221.jpg
+2020-07-21 09:37:53,532 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:53.005221.jpg
+2020-07-21 09:37:53,962 Robot target object height and range: 43, 1681.7518248175181
+2020-07-21 09:37:53,984 Step size, tag center, pwm and az: 45.157783122098934, 420.756722371248, 1691.0502010782152, 107.30181991695633
+2020-07-21 09:37:54,498 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:53.985820.jpg
+2020-07-21 09:37:54,504 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:53.985820.jpg
+2020-07-21 09:37:54,975 Robot target object height and range: 44, 1643.5301924353018
+2020-07-21 09:37:54,980 Step size, tag center, pwm and az: 66.04828860086513, 467.22730331824584, 1757.0984896790803, 113.25211618730454
+2020-07-21 09:37:55,508 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:54.981724.jpg
+2020-07-21 09:37:55,518 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:54.981724.jpg
+2020-07-21 09:37:55,956 Robot target object height and range: 45, 1607.0072992700727
+2020-07-21 09:37:55,962 Step size, tag center, pwm and az: 98.88009802552777, 539.921974266667, 1855.9785877046081, 122.16023312654127
+2020-07-21 09:37:56,475 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:55.964317.jpg
+2020-07-21 09:37:56,480 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:55.964317.jpg
+2020-07-21 09:37:56,923 Empty array
+2020-07-21 09:37:57,446 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:56.924475.jpg
+2020-07-21 09:37:57,460 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:56.924475.jpg
+2020-07-21 09:37:57,891 Empty array
+2020-07-21 09:37:58,417 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:57.892174.jpg
+2020-07-21 09:37:58,423 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:57.892174.jpg
+2020-07-21 09:37:58,871 Empty array
+2020-07-21 09:37:59,388 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:58.871827.jpg
+2020-07-21 09:37:59,395 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:58.871827.jpg
+2020-07-21 09:37:59,841 Empty array
+2020-07-21 09:38:00,359 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:59.842217.jpg
+2020-07-21 09:38:00,366 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:37:59.842217.jpg
+2020-07-21 09:38:00,823 Robot target object height and range: 45, 1607.0072992700727
+2020-07-21 09:38:00,830 Step size, tag center, pwm and az: 99.87835395116473, 542.1240905631993, 1955.8569416557727, 131.1582830320516
+2020-07-21 09:38:01,331 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:00.831419.jpg
+2020-07-21 09:38:01,337 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:00.831419.jpg
+2020-07-21 09:38:01,766 Robot target object height and range: 46, 1572.072357981593
+2020-07-21 09:38:01,772 Step size, tag center, pwm and az: 132.8637821648338, 614.54951546018, 2088.7207238206065, 143.1279931369916
+2020-07-21 09:38:02,269 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:01.774370.jpg
+2020-07-21 09:38:02,275 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:01.774370.jpg
+2020-07-21 09:38:02,712 Empty array
+2020-07-21 09:38:03,239 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:02.712950.jpg
+2020-07-21 09:38:03,245 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:02.712950.jpg
+2020-07-21 09:38:03,670 Empty array
+2020-07-21 09:38:04,183 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:03.671520.jpg
+2020-07-21 09:38:04,191 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:03.671520.jpg
+2020-07-21 09:38:04,646 Empty array
+2020-07-21 09:38:05,148 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:04.646764.jpg
+2020-07-21 09:38:05,154 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:04.646764.jpg
+2020-07-21 09:38:05,586 Robot target object height and range: 45, 1607.0072992700727
+2020-07-21 09:38:05,593 Step size, tag center, pwm and az: 120.20485365660774, 586.837389413382, 2208.925577477214, 153.95725923218146
+2020-07-21 09:38:06,120 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:05.594776.jpg
+2020-07-21 09:38:06,127 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:05.594776.jpg
+2020-07-21 09:38:06,578 Empty array
+2020-07-21 09:38:07,091 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:06.578787.jpg
+2020-07-21 09:38:07,098 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:06.578787.jpg
+2020-07-21 09:38:07,531 Empty array
+2020-07-21 09:38:08,029 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:07.531941.jpg
+2020-07-21 09:38:08,035 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:07.531941.jpg
+2020-07-21 09:38:08,471 Empty array
+2020-07-21 09:38:09,002 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:08.472113.jpg
+2020-07-21 09:38:09,008 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:08.472113.jpg
+2020-07-21 09:38:09,450 Robot target object height and range: 44, 1643.5301924353018
+2020-07-21 09:38:09,457 Step size, tag center, pwm and az: 100.4233001567847, 543.3259922578102, 2309.3488776339987, 163.00440339045034
+2020-07-21 09:38:09,971 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:09.459133.jpg
+2020-07-21 09:38:09,977 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:09.459133.jpg
+2020-07-21 09:38:10,408 Empty array
+2020-07-21 09:38:10,909 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:10.409215.jpg
+2020-07-21 09:38:10,916 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:10.409215.jpg
+2020-07-21 09:38:11,345 Empty array
+2020-07-21 09:38:11,846 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:11.346018.jpg
+2020-07-21 09:38:11,853 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:11.346018.jpg
+2020-07-21 09:38:12,286 Robot target object height and range: 43, 1681.7518248175181
+2020-07-21 09:38:12,291 Step size, tag center, pwm and az: 110.85067692668473, 566.2915001600218, 2420.1995545606833, 172.99095086132283
+2020-07-21 09:38:12,817 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:12.293168.jpg
+2020-07-21 09:38:12,825 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:12.293168.jpg
+2020-07-21 09:38:13,307 Empty array
+2020-07-21 09:38:13,822 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:13.308119.jpg
+2020-07-21 09:38:13,829 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:13.308119.jpg
+2020-07-21 09:38:14,269 Empty array
+2020-07-21 09:38:14,760 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:14.269958.jpg
+2020-07-21 09:38:14,767 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:14.269958.jpg
+2020-07-21 09:38:15,196 Empty array
+2020-07-21 09:38:15,698 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:15.196893.jpg
+2020-07-21 09:38:15,706 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:15.196893.jpg
+2020-07-21 09:38:16,145 Empty array
+2020-07-21 09:38:16,670 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:16.146593.jpg
+2020-07-21 09:38:16,677 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:16.146593.jpg
+2020-07-21 09:38:17,110 Empty array
+2020-07-21 09:38:17,641 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:17.111503.jpg
+2020-07-21 09:38:17,648 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:17.111503.jpg
+2020-07-21 09:38:18,086 Robot target object height and range: 41, 1763.7884991988606
+2020-07-21 09:38:18,091 Step size, tag center, pwm and az: 71.58539424917386, 479.5200066300985, 2491.7849488098573, 179.44008547836552
+2020-07-21 09:38:18,611 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:18.093142.jpg
+2020-07-21 09:38:18,620 track image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/FIDtracking20200721-09:38:18.093142.jpg
+2020-07-21 09:38:19,066 Robot target object height and range: 42, 1721.7935349322208
+2020-07-21 09:38:19,077 Step size, tag center, pwm and az: 112.95147906555627, 570.9105683921138, 2604.7364278754135, 189.61589440319042
+2020-07-21 09:38:24,802 ctrl-c detected
+2020-07-21 13:04:49,830 Calibration start
+2020-07-21 13:04:49,832 Targets read and returned: [['r', '2000', '0'], ['# t - tag parameters: tag nr (integer)', ' x', ' y (mm)', ' tag size (mm)'], ['t', '0', '-500', '-500', '86'], ['t', '1', '-0', '0', '86'], ['t', '2', '-750', '500', '86'], ['t', '3', '-250', '3500', '86'], ['t', '4', '0', '4000', '86'], ['t', '5', '-500', '4500', '86'], ['t', '6', '3500', '4250', '86'], ['t', '7', '4000', '4000', '86'], ['t', '8', '4250', '3750', '86'], ['t', '9', '4400', '250', '86'], ['t', '10', '4000', '0', '86'], ['t', '11', '3800', '-250', '86']]
+2020-07-21 13:04:49,832 Targets from csv file: [['r', '2000', '0'], ['# t - tag parameters: tag nr (integer)', ' x', ' y (mm)', ' tag size (mm)'], ['t', '0', '-500', '-500', '86'], ['t', '1', '-0', '0', '86'], ['t', '2', '-750', '500', '86'], ['t', '3', '-250', '3500', '86'], ['t', '4', '0', '4000', '86'], ['t', '5', '-500', '4500', '86'], ['t', '6', '3500', '4250', '86'], ['t', '7', '4000', '4000', '86'], ['t', '8', '4250', '3750', '86'], ['t', '9', '4400', '250', '86'], ['t', '10', '4000', '0', '86'], ['t', '11', '3800', '-250', '86']]
+2020-07-21 13:04:51,884 90 degrees
+2020-07-21 13:04:52,432 File name: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/ca2020l072020200721-13:04:51.885834.jpg
+2020-07-21 13:04:52,441 Calibration image file: /home/pi/RPi-Ardunio/Robot/RPiCode/Images/ca2020l072020200721-13:04:51.885834.jpg
+2020-07-21 13:04:53,783 ctrl-c detected

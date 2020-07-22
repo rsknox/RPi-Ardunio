@@ -49,7 +49,7 @@ sleep(2)  # give camera time to stablize
 try:
     for i in range(100):
         
-        i_capture('Jul20_seq_')
+        i_capture('Jul21_seq_')
         time.sleep(0.1)
 finally:    
 # now = int(round(time.time() * 1000))

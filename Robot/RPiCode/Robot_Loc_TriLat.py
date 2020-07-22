@@ -1,7 +1,7 @@
-# Robot_posn: - routine to track a fiducial tag using a turret mounted camera
-# the robot and use to calculate the x,y (in arena coordinates) the position
-# of the robot
+# Robot_Loc_TriLat: calculating robot's position using trilateration
+# using April tags
 #
+# 21 Jul 2020: added trilateration logic
 # 28 Jun 2020; 0709: added turret slew logic
 # 27 Jun 2020; 1559: inital starting point using code from 'Localization.py' 
 
@@ -68,6 +68,34 @@ def extract_corner(result, i):
     yllpx = result[i].corners[3,1]
     return ytlpx, yllpx
 
+def calc_az(rposn,tagsposn):
+    az= []
+    azp = [99,99]
+    print('\nlen of tagsposn: ',len(tagsposn))
+    for i in range(len(tagsposn)):
+        print('\ntagsposn: ',tagsposn[i][0],tagsposn[i][1],tagsposn[i][2])
+        print('rposn: ',rposn[0],rposn[1])
+        dx = int(tagsposn[i][1])-int(rposn[0])
+        dy = int(tagsposn[i][2])-int(rposn[1])
+        azr = math.atan(dy/dx)
+        print('arctan params: ',dy, dx, azr)
+        azd = azr*180/3.142
+        if (dx<0 and dy<0): azd=270-azd
+        if (dx<0 and dy>=0): azd=270+azd
+        if (dx>=0 and dy<0): azd=90+azd
+        if (dx>=0 and dy>=0): azd=90-azd
+        print('azd: ',azd)
+        #tagp = int(tagsposn[i][0])
+        #print('\ntagp:',tagp)
+        azp = [tagsposn[i][0],int(azd)]
+    
+        az.append(azp)
+    for i in range(len(tagsposn)):
+        
+        print('tag azimuth: ',az[i][0], az[i][1])
+    return az
+
+
 def calc_range(obj_hgt, real_hgt):
     # set up constants:
     global img_h
@@ -81,15 +109,17 @@ def calc_range(obj_hgt, real_hgt):
     return r_range
 
 def readGndT(gndTfilename):
+    param = []
     with open(gndTfilename, 'r') as csvfile:
         csvreader = csv.reader(csvfile)
-        titles = next(csvreader)
-    
-        for target in csvreader:
-            targets.append(target)
+        for row in csvreader:
+            #print('\n','row[0]: ',row[0])
+            if row[0] != '#':  #ignore if comment line
+                param.append(row)
+            
         
-    logging.info('Targets read and returned: {a}'.format (a=targets))
-    return targets
+    logging.info('Targets read and returned: {a}'.format (a=param))
+    return param
 
 """
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -97,7 +127,7 @@ def readGndT(gndTfilename):
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 """
 
-logging.basicConfig(filename="/home/pi/RPi-Ardunio/Robot/RPiCode/log_Robot_posn.log", level=logging.INFO, format='%(asctime)s %(message)s')
+logging.basicConfig(filename="/home/pi/RPi-Ardunio/Robot/RPiCode/log_Robot_Loc_Trilat.log", level=logging.INFO, format='%(asctime)s %(message)s')
 signal.signal(signal.SIGINT, signal_handler)
 #schedule.every(0.5).seconds.do(i_capture,'track_i')
 
@@ -106,9 +136,9 @@ signal.signal(signal.SIGINT, signal_handler)
 camera = PiCamera()
 camera.resolution = (img_h, img_v)
 # CSV file parameters
-gndTfilename = "/home/pi/RPi-Ardunio/Robot/InputFiles/gndTrth.csv"
-titles = []
-targets = []
+gndTfilename = "/home/pi/RPi-Ardunio/Robot/InputFiles/parameters.csv"
+param = []
+parameters = []
 
 xcpx = 0  # x(px) center of robot tag
 ycpx = 0  # y(px) center of robot tag
@@ -128,8 +158,23 @@ yllpx = 0  # y coor of lower left px of robot tag
 """
 logging.info('Calibration start')
 # read ground truth file with fiducial target parameters
-targets = readGndT(gndTfilename)
-logging.info('Targets from csv file: {a}'.format (a=targets))
+parameters = readGndT(gndTfilename)
+logging.info('Targets from csv file: {a}'.format (a=parameters))
+print('\nparameters: ', parameters)
+robot_iposn = [99,99]
+tags = []
+for i in range(len(parameters)):
+    print('\nparameters[i]: ',parameters[i][0])
+    if parameters[i][0] == 'r':
+        robot_iposn[0] = parameters[i][1]
+        robot_iposn[1] = parameters[i][2]
+        print('\nrobot_iposn: ',robot_iposn[0],robot_iposn[1])
+    if parameters[i][0] == 't':
+        tags.append(parameters[i][1:])
+        print('\ntags: ',tags)
+
+az = calc_az(robot_iposn,tags)
+print('\nAzimuths: ',az)
 
 camera.start_preview(fullscreen=False, window=(700,100,512,384))
 sleep(2)  # give camera time to stablize
