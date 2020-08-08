@@ -43,6 +43,6 @@ for i in range(10):
 #     cal_image = max(list_files, key=os.path.getctime)
 #     print ("CameraZx image", cal_image)
 #     logging.info('CameraZx image file: {a}'.format (a=cal_image))
-               
+sleep(2) # ensure final images written to disk before exit               
 camera.stop_preview()
 sys.exit()
