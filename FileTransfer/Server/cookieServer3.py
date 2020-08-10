@@ -21,6 +21,7 @@ def setupConnection():
     return conn
 
 def storeFile(filePath):
+    print('entered storeFile: ', filePath)
     picFile = open(filePath, 'wb')
     print("Opened the file.")
     pic = conn.recv(1024)
@@ -46,7 +47,8 @@ def dataTransfer(conn):
             reply = REPEAT(dataMessage)
         elif command == 'STORE':
             print("Store command received. Time to save a picture")
-            storeFile(dataMessage[1])
+            #storeFile(dataMessage[1])
+            storeFile('image.jpg')
             reply = "File stored."
         elif command == 'LED_ON':
             callLED()
