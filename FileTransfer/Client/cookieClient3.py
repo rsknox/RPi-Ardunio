@@ -2,7 +2,7 @@ import socket
 from time import sleep
 from time import time
 
-host = '192.168.2.2'
+host = '192.168.1.163'
 port = 5560
 
 def setupSocket():
