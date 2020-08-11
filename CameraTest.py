@@ -19,7 +19,14 @@ def signal_handler(sig, frame):
     sys.exit(0)
 
 def i_capture(name):
-    file_name = "/home/pi/Git/RPi-Ardunio/" + name + datetime.datetime.now().strftime("%Y%m%d-%H%M%S.jpg")
+    now = time.time()
+    #strip off msb part, leaving today's seconds
+    ny = int(now/100000)
+    ny = now - (ny*100000)
+    now = round(ny,3) # time since epoch rounded to msec
+    now = str(now)
+    #file_name = "/home/pi/Git/RPi-Ardunio/" + name + datetime.datetime.now().strftime("%Y%m%d-%H%M%S.jpg")
+    file_name = "/home/pi/Git/RPi-Ardunio/" + name + '_'+ now + '.jpg'
     camera.capture(file_name)
     print('\n', file_name)
     logging.info('File name: {a}'.format (a=file_name))

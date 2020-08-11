@@ -7,7 +7,8 @@ from cookieClient3 import backup
 from cookieAnalog2 import getTemp
 
 motionState = False
-picPath = "/home/pi/Desktop/cookie/images/"
+#picPath = "/home/pi/Desktop/cookie/images/"
+picPath = "/home/pi/Desktop/"
 sleepTime = 3
 triggerTemp = 20
 
