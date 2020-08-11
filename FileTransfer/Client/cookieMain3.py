@@ -5,16 +5,26 @@ from subprocess import call
 from time import sleep
 from cookieClient3 import backup
 from cookieAnalog2 import getTemp
+import time
 
 motionState = False
 #picPath = "/home/pi/Desktop/cookie/images/"
-picPath = "/home/pi/Desktop/"
+#picPath = "/home/pi/Desktop/"
+picPath = "/home/pi/Git/RPi-Ardunio/"
 sleepTime = 3
 triggerTemp = 20
 
 def captureImage(currentTime, picPath):
     # Generate the picture's name
-    picName = currentTime.strftime("%Y.%m.%d-%H%M%S") + '.jpg'
+    now = time.time()
+    #strip off msb part, leaving today's seconds
+    ny = int(now/100000)
+    ny = now - (ny*100000)
+    now = round(ny,3) # time since epoch rounded to msec
+    now = str(now)
+    #file_name = "/home/pi/Git/RPi-Ardunio/" + name + datetime.datetime.now().strftime("%Y%m%d-%H%M%S.jpg")
+    picName = "Camera_Zx_" + now + '.jpg'
+    #picName = currentTime.strftime("%Y.%m.%d-%H%M%S") + '.jpg'
     with picamera.PiCamera() as camera:
         camera.resolution = (1280, 720)
         camera.capture(picPath + picName)
