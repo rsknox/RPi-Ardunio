@@ -47,8 +47,13 @@ def dataTransfer(conn):
             reply = REPEAT(dataMessage)
         elif command == 'STORE':
             print("Store command received. Time to save a picture")
+            print('dataMessage[1]: ', dataMessage[1])
+            ix = dataMessage[1].find('Camera')
+            print('ix: ', ix)
+            namef = dataMessage[1][ix:]
+            print('namef: ', namef)
             #storeFile(dataMessage[1])
-            storeFile('image.jpg')
+            storeFile(namef)
             reply = "File stored."
         elif command == 'LED_ON':
             callLED()
